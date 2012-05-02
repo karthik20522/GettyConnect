@@ -1,7 +1,7 @@
 GettyConnect
 ============
 
-GettyImages Connect API - Gibson Service [http://gibson.gettyimages.com/Public/help]
+GettyImages Connect API - Gibson Service [https://api.gettyimages.com/sites/default/files/GettyImagesConnectAPI.pdf]
 
 Examples: (please review the test cases for how to)
 
