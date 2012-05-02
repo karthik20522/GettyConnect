@@ -18,7 +18,7 @@ namespace gibsonSearchService
             var requestBody = new { RequestHeader = requestHeader, GetImageDetailsRequestBody = searchBody };
             var postData = JsonConvert.SerializeObject(requestBody);
 
-            var responseBody = PostData("http://gibson.gettyimages.com/Public/Json/1.0/GetImageDetails", postData);
+            var responseBody = PostData("http://connect.gettyimages.com/v1/search/GetImageDetails", postData);
             return JsonConvert.DeserializeObject<GetImageDetailsResponse>(responseBody);
         }
 
@@ -30,7 +30,7 @@ namespace gibsonSearchService
             var requestBody = new { RequestHeader = requestHeader, GetEventsRequestBody = searchBody };
             var postData = JsonConvert.SerializeObject(requestBody);
 
-            var responseBody = PostData("http://gibson.gettyimages.com/Public/Json/1.0/GetEvents", postData);
+            var responseBody = PostData("http://gibson.gettyimages.com/v1/search/GetEventDetails", postData);
             return JsonConvert.DeserializeObject<GetEventResultResponse>(responseBody);
         }
 
@@ -42,11 +42,11 @@ namespace gibsonSearchService
             var requestBody = new { RequestHeader = requestHeader, SearchForImages2RequestBody = searchBody };
             var postData = JsonConvert.SerializeObject(requestBody);
 
-            var responseBody = PostData("http://gibson.gettyimages.com/Public/Json/1.0/SearchForImages2", postData);
+            var responseBody = PostData("http://connect.gettyimages.com/v1/search/SearchForImages", postData);
             return JsonConvert.DeserializeObject<SearchImageResponse>(responseBody);
         }
 
-        public Response CreateSession(string systemId = "9999", string systemPassword = "systemPassword12345678==", 
+        public Response CreateSession(string systemId = "9999", string systemPassword = "sysPassword",
             string userId = "userId", string userPassword = "password")
         {
             var requestHeader = new RequestHeader();
@@ -56,15 +56,15 @@ namespace gibsonSearchService
             sessionTokenRequest.UserId = userId;
             sessionTokenRequest.UserPassword = userPassword;
 
-            var requestBody = new { RequestHeader = requestHeader, SessionTokenRequest = sessionTokenRequest };
+            var requestBody = new { RequestHeader = requestHeader, CreateSessionRequestBody = sessionTokenRequest };
             var postData = JsonConvert.SerializeObject(requestBody);
 
-            var responseBody = PostData("https://gibson.gettyimages.com/Session/Json/2.0/CreateSession", postData);
+            var responseBody = PostData("https://connect.gettyimages.com/v1/session/CreateSession", postData);
 
             return JsonConvert.DeserializeObject<Response>(responseBody);
         }
 
-        public Response RenewSession(string token, string coordinationId, string systemId = "9999", string systemPassword = "systemPassword12345678==")
+        public Response RenewSession(string token, string coordinationId, string systemId = "9999", string systemPassword = "sysPassword")
         {
             var requestHeader = new RequestHeader();
             requestHeader.CoordinationId = coordinationId ?? string.Empty;
@@ -77,7 +77,7 @@ namespace gibsonSearchService
             var requestBody = new { RequestHeader = requestHeader, RenewSessionToken = renewSession };
             var postData = JsonConvert.SerializeObject(requestBody);
 
-            var responseBody = PostData("https://gibson.gettyimages.com/Session/Json/2.0/RenewSession", postData);
+            var responseBody = PostData("https://connect.gettyimages.com/v1/session/RenewSession", postData);
 
             return JsonConvert.DeserializeObject<Response>(responseBody);
         }
