@@ -47,7 +47,7 @@ namespace gibsonSearchService
         }
 
         public Response CreateSession(string systemId = "9999", string systemPassword = "systemPassword12345678==", 
-            string userId = "qaterms", string userPassword = "Pa55word")
+            string userId = "userId", string userPassword = "password")
         {
             var requestHeader = new RequestHeader();
             var sessionTokenRequest = new SessionTokenRequest();
