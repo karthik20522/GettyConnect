@@ -30,7 +30,7 @@ namespace gibsonSearchService
             var requestBody = new { RequestHeader = requestHeader, GetEventsRequestBody = searchBody };
             var postData = JsonConvert.SerializeObject(requestBody);
 
-            var responseBody = PostData("http://gibson.gettyimages.com/v1/search/GetEventDetails", postData);
+            var responseBody = PostData("http://connect.gettyimages.com/v1/search/GetEventDetails", postData);
             return JsonConvert.DeserializeObject<GetEventResultResponse>(responseBody);
         }
 
