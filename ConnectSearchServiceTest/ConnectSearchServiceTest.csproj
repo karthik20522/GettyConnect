@@ -49,7 +49,7 @@
     <Compile Include="searchTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\gibsonSearchService\ConnectSearchService.csproj">
+    <ProjectReference Include="..\ConnectSearchService\ConnectSearchService.csproj">
       <Project>{EA9EDD84-D6B8-495F-93FB-0065522FDEAC}</Project>
       <Name>ConnectSearchService</Name>
     </ProjectReference>
