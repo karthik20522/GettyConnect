@@ -3,7 +3,7 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using gibsonSearchService;
+using ConnectSearchService;
 using System.IO;
 
 namespace gibsonSearchServiceTest

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace gibsonSearchService
+namespace ConnectSearchService
 {
     /// <summary>
     /// CountryCode: Accepts three letter country codes as defined in ISO3166-1(http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3#Current_codes)

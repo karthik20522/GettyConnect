@@ -8,8 +8,8 @@
     <ProjectGuid>{EA9EDD84-D6B8-495F-93FB-0065522FDEAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>gibsonSearchService</RootNamespace>
-    <AssemblyName>gibsonSearchService</AssemblyName>
+    <RootNamespace>ConnectSearchService</RootNamespace>
+    <AssemblyName>ConnectSearchService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

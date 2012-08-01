@@ -6,7 +6,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace gibsonSearchService
+namespace ConnectSearchService
 {
     public class ServiceOperations
     {

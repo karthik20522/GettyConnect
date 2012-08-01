@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("gibsonSearchService")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ConnectSearchService")]
+[assembly: AssemblyDescription("GettyImages Connect API proxy classes")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Getty Images")]
-[assembly: AssemblyProduct("gibsonSearchService")]
-[assembly: AssemblyCopyright("Copyright © Getty Images 2012")]
+[assembly: AssemblyCompany("http://github.com/karthik20522")]
+[assembly: AssemblyProduct("ConnectSearchService")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

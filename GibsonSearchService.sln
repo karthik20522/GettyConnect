@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gibsonSearchService", "gibsonSearchService\gibsonSearchService.csproj", "{EA9EDD84-D6B8-495F-93FB-0065522FDEAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSearchService", "gibsonSearchService\ConnectSearchService.csproj", "{EA9EDD84-D6B8-495F-93FB-0065522FDEAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gibsonSearchServiceTest", "gibsonSearchServiceTest\gibsonSearchServiceTest.csproj", "{F23A24D8-9DA3-4EDC-8548-770DF1388B50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSearchServiceTest", "gibsonSearchServiceTest\ConnectSearchServiceTest.csproj", "{F23A24D8-9DA3-4EDC-8548-770DF1388B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
