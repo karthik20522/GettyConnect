@@ -8,9 +8,6 @@ using System.IO;
 
 namespace gibsonSearchServiceTest
 {
-    /// <summary>
-    /// http://gibson.gettyimages.com/Public/help
-    /// </summary>
     [TestClass]
     public class searchTest
     {
