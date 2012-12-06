@@ -53,7 +53,7 @@ namespace ConnectSearchService
             var sessionTokenRequest = new SessionTokenRequest();
             sessionTokenRequest.SystemId = systemId;
             sessionTokenRequest.SystemPassword = systemPassword;
-            sessionTokenRequest.UserId = userId;
+            sessionTokenRequest.UserName = userId;
             sessionTokenRequest.UserPassword = userPassword;
 
             var requestBody = new { RequestHeader = requestHeader, CreateSessionRequestBody = sessionTokenRequest };
