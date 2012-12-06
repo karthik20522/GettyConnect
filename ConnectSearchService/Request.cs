@@ -15,7 +15,7 @@ namespace ConnectSearchService
     {
         public string SystemId { get; set; }
         public string SystemPassword { get; set; }
-        public string UserId { get; set; }
+        public string UserName { get; set; }
         public string UserPassword { get; set; }
         public bool RememberedUser { get; set; }
     }
